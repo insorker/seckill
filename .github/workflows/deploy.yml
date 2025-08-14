@@ -20,11 +20,13 @@ jobs:
       - name: Deploy seckill infra
         run: |
           ssh ubuntu@${{ secrets.SERVER_IP }} "cd ~/seckill/infra && docker compose down" || echo "docker stop failed"
+          ssh ubuntu@${{ secrets.SERVER_IP }} "mkdir -p ~/seckill/infra"
           scp -r ./seckill-infra/* ubuntu@${{ secrets.SERVER_IP }}:~/seckill/infra
           ssh ubuntu@${{ secrets.SERVER_IP }} "cd ~/seckill/infra && docker compose up -d"
 
       - name: Deploy seckill nginx
         run: |
           ssh ubuntu@${{ secrets.SERVER_IP }} "cd ~/seckill/nginx && /usr/local/openresty/nginx/sbin/nginx -p \$(pwd) -s stop" || echo "nginx stop failed"
+          ssh ubuntu@${{ secrets.SERVER_IP }} "mkdir -p ~/seckill/nginx/{conf,logs}"
           scp -r ./seckill-nginx/* ubuntu@${{ secrets.SERVER_IP }}:~/seckill/nginx
           ssh ubuntu@${{ secrets.SERVER_IP }} "cd ~/seckill/nginx && /usr/local/openresty/nginx/sbin/nginx -p \$(pwd) -c conf/nginx.conf"
