@@ -17,11 +17,11 @@ jobs:
         run: |
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Deploy seckill docker
+      - name: Deploy seckill infra
         run: |
-          ssh ubuntu@${{ secrets.SERVER_IP }} "cd ~/seckill/docker && docker compose down"
-          scp -r ./seckill-docker/* ubuntu@${{ secrets.SERVER_IP }}:~/seckill/docker
-          ssh ubuntu@${{ secrets.SERVER_IP }} "cd ~/seckill/docker && docker compose up -d"
+          ssh ubuntu@${{ secrets.SERVER_IP }} "cd ~/seckill/infra && docker compose down" || echo "docker stop failed"
+          scp -r ./seckill-infra/* ubuntu@${{ secrets.SERVER_IP }}:~/seckill/infra
+          ssh ubuntu@${{ secrets.SERVER_IP }} "cd ~/seckill/infra && docker compose up -d"
 
       - name: Deploy seckill nginx
         run: |
