@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e541620-c90c-4ec3-98f0-b270fbfb2d0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/seckill-docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-nginx/config/upstream.conf" afterDir="false" />
+    <list default="true" id="7e541620-c90c-4ec3-98f0-b270fbfb2d0e" name="Changes" comment="feat: 增强 github cicd 的能力，提供部署功能">
       <change afterPath="$PROJECT_DIR$/seckill-web/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/seckill-web/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/seckill-web/.idea/encodings.xml" afterDir="false" />
@@ -19,13 +17,7 @@
       <change afterPath="$PROJECT_DIR$/seckill-web/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/seckill-web/service/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/seckill-web/service/src/main/java/com/insorker/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seckill-nginx/config/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/seckill-nginx/config/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seckill-nginx/domain/domain.com" beforeDir="false" afterPath="$PROJECT_DIR$/seckill-nginx/domain/domain.com" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seckill-docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/seckill-docker/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +77,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755141615425</updated>
-      <workItem from="1755141617368" duration="1617000" />
+      <workItem from="1755141617368" duration="1944000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 增强 github cicd 的能力，提供部署功能">
+      <option name="closed" value="true" />
+      <created>1755143380092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755143380092</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 增强 github cicd 的能力，提供部署功能">
+      <option name="closed" value="true" />
+      <created>1755143399058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755143399058</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 增强 github cicd 的能力，提供部署功能">
+      <option name="closed" value="true" />
+      <created>1755143415000</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755143415000</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 增强 github cicd 的能力，提供部署功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增强 github cicd 的能力，提供部署功能" />
   </component>
 </project>
