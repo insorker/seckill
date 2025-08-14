@@ -19,6 +19,14 @@ jobs:
         run: |
           ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
 
+      - name: Deploy seckill docker
+        run: |
+          ssh ubuntu@$SERVER_IP "cd ~/seckill/docker && docker compose down"
+          scp -r ./seckill-docker/* ubuntu@$SERVER_IP:~/seckill/docker
+          ssh ubuntu@$SERVER_IP "cd ~/seckill/docker && docker compose up -d"
+
       - name: Deploy seckill nginx
         run: |
+          ssh ubuntu@$SERVER_IP "cd ~/seckill/nginx && nginx -p `pwd` -s stop"
           scp -r ./seckill-nginx/* ubuntu@$SERVER_IP:~/seckill/nginx
+          ssh ubuntu@$SERVER_IP "cd ~/seckill/nginx && nginx -p `pwd` -c conf/nginx.conf"
