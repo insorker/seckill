@@ -21,4 +21,4 @@ jobs:
 
       - name: Deploy seckill nginx
         run: |
-          scp -r ./seckill-nginx/* ubuntu@$SERVER_IP:~/seckill/nginx/sub_conf
+          scp -r ./seckill-nginx/* ubuntu@$SERVER_IP:~/seckill/nginx
