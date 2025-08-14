@@ -3,14 +3,14 @@ services:
     image: redis:latest
     container_name: redis_0
     ports:
-      - 6190:6379
+      - 6379:6379
     volumes:
       - ./volumes/redis_0/data:/data
     networks:
-      - network_0
+      - seckill_network_0
 
 networks:
-  network_0:
+  seckill_network_0:
     driver: bridge
     ipam:
       driver: default
