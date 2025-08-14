@@ -5,19 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e541620-c90c-4ec3-98f0-b270fbfb2d0e" name="Changes" comment="fix: 修复 nginx conf 目录错误的 bug">
-      <change afterPath="$PROJECT_DIR$/seckill-web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/common/src/main/java/com/insorker/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/gateway/src/main/java/com/insorker/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill-web/service/src/main/java/com/insorker/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755141615425</updated>
-      <workItem from="1755141617368" duration="3544000" />
+      <workItem from="1755141617368" duration="4770000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 增强 github cicd 的能力，提供部署功能">
       <option name="closed" value="true" />
@@ -133,7 +120,31 @@
       <option name="project" value="LOCAL" />
       <updated>1755144795667</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: 修复 nginx conf 目录错误的 bug">
+      <option name="closed" value="true" />
+      <created>1755145190474</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1755145190474</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: 修复 nginx conf 目录错误的 bug">
+      <option name="closed" value="true" />
+      <created>1755145360737</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1755145360738</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: 修复 nginx conf 目录错误的 bug">
+      <option name="closed" value="true" />
+      <created>1755145465539</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1755145465539</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
